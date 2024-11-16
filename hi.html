@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photography</title>
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #0a0a0afe;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1d4a64;
+    color: #c7d415;
+    width: 100%;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Gallery Styles */
+.gallery {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.photo-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1d4a64;
+    color: #b0d40f;
+    width: 100%;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>About</h1>
+        <p>Go Trip</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="photo-grid">
+            <img src="https://thumbs.dreamstime.com/b/photo-collage-made-diverse-world-travel-destinations-wooden-surface-photos-127092750.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgg3CnOA6Uq5cPQRBGXWbZCPzrXzlVdlaMg&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlW7L5RUMYOSYmfs3YwCFgJB_6gCMzoo2Dg&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUoMRg0rh85-Mc3gF-8t9x_YxpLKI-vPvXcA&s"
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Go Trip. All rights reserved.</p>
+    </footer>
+</body>
+</html>
